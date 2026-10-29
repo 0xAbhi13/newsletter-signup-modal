@@ -95,8 +95,6 @@ Quick syntax check:
 node --check script.js
 ```
 
-To re-test the popup in the same tab, clear session storage in DevTools (Application → Session Storage) or open a new tab.
-
 ## Profile Links
 
 | Profile | Link |
