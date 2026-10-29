@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Newsletter Signup Modal</title>
+  <meta name="description" content="A polished, accessible newsletter signup modal built with HTML5, CSS3, and vanilla JavaScript." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page" id="page">
+    <section class="hero" aria-labelledby="pageTitle">
+      <p class="eyebrow">VEDA TECHNOLOGY INTERNSHIP</p>
+      <h1 id="pageTitle" class="hero__title">Newsletter Signup Modal</h1>
+      <p class="hero__subtitle">
+        Task 20/45 &mdash; A polished, accessible popup newsletter signup built with
+        HTML5, CSS3, and vanilla JavaScript.
+      </p>
+      <p class="hero__note">
+        The signup modal appears automatically a few seconds after this page loads.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    Built by Abhishek Jadhav | Veda Technology Internship &mdash; Day 20/45
+  </footer>
+
+  <!-- Newsletter Modal -->
+  <div class="modal-overlay" id="modalOverlay" hidden>
+    <div
+      class="modal"
+      id="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modalTitle"
+      aria-describedby="modalDesc"
+      tabindex="-1"
+    >
+      <button
+        type="button"
+        class="modal__close"
+        id="closeBtn"
+        aria-label="Close newsletter signup dialog"
+      >
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+          <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </button>
+
+      <div class="modal__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="44" height="44" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="4" width="20" height="16" rx="2" />
+          <path d="m22 7-10 6L2 7" />
+        </svg>
+      </div>
+
+      <h2 id="modalTitle" class="modal__title">Subscribe to our newsletter</h2>
+      <p id="modalDesc" class="modal__desc">
+        Get the latest articles, updates, and resources delivered straight to your
+        inbox. No spam, ever.
+      </p>
+
+      <form id="newsletterForm" class="newsletter-form" novalidate>
+        <div class="form-row">
+          <label for="emailInput" class="sr-only">Email address</label>
+          <input
+            type="email"
+            id="emailInput"
+            name="email"
+            class="form-input"
+            placeholder="Enter your email address"
+            autocomplete="email"
+            required
+            aria-describedby="emailError"
+          />
+          <button type="submit" id="submitBtn" class="btn btn--primary">Subscribe</button>
+        </div>
+
+        <p class="form-error" id="emailError" role="alert" aria-live="assertive"></p>
+
+        <p class="form-success" id="successMsg" role="status" aria-live="polite" hidden>
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+            <path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          You're subscribed! Thanks for joining.
+        </p>
+
+        <p class="form-privacy">No spam. Unsubscribe anytime.</p>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
