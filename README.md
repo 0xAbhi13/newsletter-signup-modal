@@ -16,10 +16,6 @@
 
 ---
 
-Newsletter Signup Modal by **Abhishek Jadhav** — Web Developer and first-year BCA student at VIIT, Baramati. Built with **HTML5 + CSS3 + Vanilla JavaScript**: an auto-appearing, accessible newsletter popup with email validation, success feedback, dismissal handling, and session-aware reopen prevention. No frameworks, no build step, no backend.
-
-> **Internship attribution:** 45-day Web Development Internship at **Veda Technology** — Day 20: Newsletter Signup Modal.
-
 ## Features
 
 <div align="center">
@@ -108,39 +104,6 @@ To re-test the popup in the same tab, clear session storage in DevTools (Applica
 | ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white) | https://github.com/0xAbhi13 |
 | ![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white) | https://www.linkedin.com/in/0xabhi13/ |
 | ![Portfolio](https://img.shields.io/badge/Portfolio-2563EB?style=flat-square&logo=globe&logoColor=white) | https://0xabhi13.github.io/MyPortfolio/ |
-
-## My Approach
-
-1. Read the brief: auto popup after 3s, fade+scale, overlay, close via ×/overlay/Escape, session storage, validation, success, accessibility.
-2. Built semantic HTML with ARIA dialog attributes and a form using HTML5 validation.
-3. Styled mobile-up with CSS custom properties, blue accent, rounded modal, subtle shadow, focus rings.
-4. Wrote vanilla JS with session-aware scheduling, validation, simulated subscription, focus management, and focus trap.
-5. Tested open/close, overlay click, Escape, validation, success, session persistence, and responsive layouts.
-
-## Outcome
-
-A complete, responsive, dependency-free Newsletter Signup Modal: auto-popup, validation, success feedback, session-aware reopen prevention, keyboard and screen-reader support, and no console errors.
-
-## Testing Checklist
-
-- [x] The modal appears after approximately 3 seconds.
-- [x] The close button works.
-- [x] Clicking the overlay closes the modal, but clicking inside does not.
-- [x] Pressing Escape closes the modal.
-- [x] Invalid and empty email addresses are rejected.
-- [x] A valid email produces a success message.
-- [x] The page does not reload on submission.
-- [x] The modal does not reappear after dismissal during the same session.
-- [x] The modal does not reappear after successful signup during the same session.
-- [x] The layout works on mobile and desktop.
-- [x] Keyboard navigation, focus management, and accessibility attributes work correctly.
-
-## Limitations
-
-- No backend: subscription is simulated on the frontend (ready for API integration).
-- `sessionStorage` only persists for the current tab/session.
-- No email delivery or confirmation flow.
-- Success auto-closes the modal after a short delay.
 
 ---
 
